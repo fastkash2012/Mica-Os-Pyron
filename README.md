@@ -1,166 +1,158 @@
 <div align="center">
 
-# ❖ Mica OS Pyron
+# 🧩 Mica OS Pyron Plugins
 
-### A lightweight, customizable desktop OS built with Python.
+### Extend Mica OS. Customize everything. Build new experiences.
 
-**Familiar. Flexible. Local. Experimental.**
+**Flexible. Modular. Experimental.**
 
-[![Version](https://img.shields.io/badge/Pyron-10.2.8-blue)](https://micaos-pyron.netlify.app/)
-[![Python](https://img.shields.io/badge/Python-3.11%2B-yellow)](https://www.python.org/)
-[![Status](https://img.shields.io/badge/status-stable-success)](https://github.com/fastkash2012)
+[![Mica OS](https://img.shields.io/badge/Mica%20OS-Pyron-blue)](https://micaos-pyron.netlify.app/)
+[![Plugins](https://img.shields.io/badge/Plugins-MPLUG-purple)](../../)
+[![Status](https://img.shields.io/badge/status-active-success)](https://github.com/fastkash2012)
 
-### [🌐 Website](https://micaos-pyron.netlify.app/) · [📦 Download](../../releases) · [🚀 Releases](../../releases)
+### [🌐 Mica OS Website](https://micaos-pyron.netlify.app/) · [🖥️ Main Project](https://github.com/fastkash2012/Mica-OS-Pyron)
 
 </div>
 
 ---
 
-## What is Mica OS?
+## 🧩 What is Mica OS Plugins?
 
-**Mica OS Pyron** is an experimental desktop operating system environment built with Python and web technologies. It combines a modern desktop interface with local profiles, applications, plugins, themes, file management, Python tools, and system customization.
+This branch contains plugins and extensions for **Mica OS Pyron**.
 
-It isn't trying to replace Windows, Linux, or macOS. Mica OS is built for experimenting, learning, customizing, and exploring new ideas for desktop software.
+Plugins allow you to add new features, customize the desktop, extend built-in applications, modify system behavior, and experiment with new ideas without changing the core Mica OS source code.
 
-**Run it. Tweak it. Extend it. Break it. Learn from it.**
-
----
-
-## ✨ Features
-
-### 🖥️ Your Desktop, Your Way
-
-Mica OS supports multiple desktop layouts including a traditional **taskbar**, a cleaner **top bar**, and an application-focused **dock**. Themes, wallpapers, and plugins allow you to further customize the experience.
-
-### 🔒 Local Profiles
-
-Create local profiles protected by a PIN, with optional encryption and Guest Mode. Guest sessions are temporary and clear when you log out.
-
-### 📁 Real File Management
-
-**Jade Explorer** provides file and folder management, while the backend supports real file operations including browsing, copying, moving, searching, and archive handling.
-
-### 🐍 Built with Python
-
-Python powers the backend and runtime. **Python Lab** and other developer tools make Mica OS an environment where you can experiment with scripts, applications, and system features.
-
-### 🧩 Apps & Plugins
-
-Mica OS is designed to be extendable. Build custom applications, plugins, and themes directly through **Beryl Studio** and the built-in development tools.
+**Install it. Modify it. Build on it.**
 
 ---
 
-## 📦 Built-in Apps
+## ✨ What Can Plugins Do?
 
-Mica OS includes a growing collection of applications such as:
+Mica OS plugins can extend different parts of the system, including:
 
-**Amber Settings** for system customization · **Jade Explorer** for files · **Onyx Terminal** for command-line tools · **Pyro Browser** for browsing · **Ruby Editor** for editing · **Python Lab** for development · **Beryl Studio** for creating apps and plugins · plus creative and media tools.
+* 🖥️ Desktop effects and UI enhancements
+* 🎨 Themes and visual customization
+* 📁 File Explorer tools
+* ⚙️ System features and utilities
+* 🧩 New applications and widgets
+* 🔧 Developer tools
+* ✨ Experimental features
+
+The plugin system is designed to keep Mica OS modular and customizable.
 
 ---
 
-## 🛠️ Development
+## 📦 Plugin Format
 
-Mica OS is built using:
+Mica OS uses the `.mplug` format for plugin packages.
 
-**Python** for the backend and runtime · **FastAPI** for backend services · **PyQt6 + WebEngine** for the native desktop application · **HTML, CSS and JavaScript** for the desktop interface.
+A plugin may contain:
 
-The project is modular, separating the desktop interface, backend services, applications, themes, plugins, and user data.
-
-```text id="p31xqa"
-Mica-OS-Pyron/
-├── apps/        # Built-in and user applications
-├── backend/     # Python backend and system services
-├── frontend/    # Desktop interface
-├── plugins/     # User plugins
-├── themes/      # Themes and customization
-├── data/        # Local system data
-└── native_app.py
+```text
+MyPlugin/
+├── manifest.json
+├── plugin.py
+├── assets/
+│   ├── icons/
+│   └── images/
+└── README.md
 ```
 
----
-
-## 📂 Mica Formats
-
-Mica OS uses custom formats for different parts of the system:
-
-**`.mapp`** — Applications
-**`.mplug`** — Plugins
-**`.mpkg`** — Theme packages
-**`.mica`** — System backups
-**`.mupdate`** — Updates
-**`.mdfs`** — File backups
-
-These formats are designed to keep Mica OS modular, portable, and easy to experiment with.
+Plugins can include Python code, web interfaces, assets, configuration files, and other resources depending on what they extend.
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Installing Plugins
 
-### Download
+1. Download or clone a plugin.
+2. Import the plugin into Mica OS.
+3. Open the plugin manager or system settings.
+4. Enable the plugin.
+5. Restart or reload Mica OS if required.
 
-The latest version of **Mica OS Pyron** is available directly from the GitHub repository.
+Plugin support may vary depending on the Mica OS Pyron version.
 
-### 📦 [Download the Latest Release](../../releases)
+---
 
-After downloading and extracting the project:
+## 🛠️ Creating a Plugin
 
-### Windows
+Plugins are built to be easy to experiment with.
 
-Run:
+You can create plugins for:
 
-```text id="w1d9yr"
-start.bat
+* New desktop features
+* System utilities
+* UI effects
+* Custom tools
+* Applications
+* Themes
+* Widgets
+* Developer experiments
+
+Start by creating a plugin folder and adding its manifest and source files.
+
+**The goal is experimentation — there are no limits to what you can try.**
+
+---
+
+## 📂 Plugin Collection
+
+This branch may contain:
+
+```text
+plugins/
+├── official/        # Official Mica OS plugins
+├── experimental/    # Experimental features
+├── community/       # Community plugins
+└── development/     # Plugins currently in development
 ```
 
-### Linux / macOS
-
-Run:
-
-```bash id="4jnbun"
-chmod +x run.sh
-./run.sh
-```
-
-Mica OS will handle the required Python dependencies on first launch.
-
-> **Recommended:** Python 3.11 or newer.
+Some plugins may be experimental or incomplete.
 
 ---
 
-## 🌐 Try Mica OS Online
+## ⚠️ Experimental Software
 
-You can explore the project and find more information on the official website:
+Plugins can modify the behavior and appearance of Mica OS.
 
-### [❖ micaos-pyron.netlify.app](https://micaos-pyron.netlify.app/)
+Because this project is experimental:
 
-The website includes information about Mica OS, its features, versions, and the project itself.
+* Some plugins may be unfinished.
+* Some features may change between versions.
+* Plugins may require newer versions of Mica OS.
+* Experimental plugins may cause unexpected behavior.
 
----
-
-## 🗺️ Roadmap
-
-Mica OS Pyron is actively evolving. Future development focuses on expanding the application ecosystem, improving plugins and themes, adding more developer tools, improving the desktop experience, and making the system easier to customize and extend.
+Use, modify, and experiment freely.
 
 ---
 
 ## 🤝 Contributing
 
-Ideas, bug reports, applications, plugins, themes, and improvements are welcome.
+Contributions are welcome!
 
-Mica OS is an experimental project — experimentation is part of the point.
+You can contribute:
+
+* 🧩 New plugins
+* 🐛 Bug fixes
+* 💡 Feature ideas
+* 🎨 UI improvements
+* 🔧 Developer tools
+* 📚 Documentation
+
+If you build something interesting for Mica OS, feel free to share it.
 
 ---
 
 <div align="center">
 
-## ❖ Mica OS Pyron
+## 🧩 Mica OS Pyron Plugins
 
-**Pyron 10.2.8**
+### Extend your desktop. Experiment with new ideas.
 
-### [🌐 Website](https://micaos-pyron.netlify.app/) · [📦 Releases](../../releases)
+### [🌐 Website](https://micaos-pyron.netlify.app/) · [🖥️ Main Project](https://github.com/fastkash2012/Mica-OS-Pyron)
 
 ---
 
-**Build things. Break things. Learn things.**
+**Build plugins. Customize Mica. Break things. Learn things.**
 
 </div>
